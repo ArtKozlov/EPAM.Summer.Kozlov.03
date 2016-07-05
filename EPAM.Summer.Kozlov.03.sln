@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GCD", "GCD\GCD.csproj", "{C2605A7E-8A12-44BA-BF99-09660407465E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MathNewton", "MathNewton\MathNewton.csproj", "{30E85007-44D4-49FE-81C5-76AB3547F429}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C2605A7E-8A12-44BA-BF99-09660407465E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C2605A7E-8A12-44BA-BF99-09660407465E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C2605A7E-8A12-44BA-BF99-09660407465E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C2605A7E-8A12-44BA-BF99-09660407465E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{30E85007-44D4-49FE-81C5-76AB3547F429}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{30E85007-44D4-49FE-81C5-76AB3547F429}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{30E85007-44D4-49FE-81C5-76AB3547F429}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{30E85007-44D4-49FE-81C5-76AB3547F429}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
