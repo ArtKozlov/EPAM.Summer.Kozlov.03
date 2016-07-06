@@ -12,10 +12,9 @@ namespace GCD
         /// <returns>GCD of numbers./returns>
         public static int GetGCD(out long runTime, int firstNumber, int secondNumber)
         {
-            int result = 0;
             Stopwatch stopWatch = new Stopwatch();
             stopWatch.Start();
-            result = GCD(firstNumber, secondNumber);
+            int result = GCD(firstNumber, secondNumber);
             stopWatch.Stop();
             runTime = stopWatch.ElapsedTicks;
             return result;
@@ -28,10 +27,9 @@ namespace GCD
         /// <returns>GCD of numbers./returns>
         public static int GetSteinGCD(out long runTime, int firstNumber, int secondNumber)
         {
-            int result = 0;
             Stopwatch stopWatch = new Stopwatch();
             stopWatch.Start();
-            result = SteinGCD(firstNumber, secondNumber);
+            int result = SteinGCD(firstNumber, secondNumber);
             stopWatch.Stop();
             runTime = stopWatch.ElapsedTicks;
             return result;
@@ -44,11 +42,10 @@ namespace GCD
         /// <returns>GCD of numbers./returns>
         public static int GetGCD(out long runTime, int firstNumber, int secondNumber, int thirdNumber)
         {
-            int result = 0;
             Stopwatch stopWatch = new Stopwatch();
             stopWatch.Start();
             firstNumber = GCD(firstNumber, secondNumber);
-            result = GCD(firstNumber, thirdNumber);
+            int result = GCD(firstNumber, thirdNumber);
             stopWatch.Stop();
             runTime = stopWatch.ElapsedTicks;
             return result;
@@ -60,11 +57,10 @@ namespace GCD
         /// <returns>GCD of numbers./returns>
         public static int GetSteinGCD(out long runTime, int firstNumber, int secondNumber, int thirdNumber)
         {
-            int result = 0;
             Stopwatch stopWatch = new Stopwatch();
             stopWatch.Start();
             firstNumber = SteinGCD(firstNumber, secondNumber);
-            result = SteinGCD(firstNumber, thirdNumber);
+            int result = SteinGCD(firstNumber, thirdNumber);
             stopWatch.Stop();
             runTime = stopWatch.ElapsedTicks;
             return result;
