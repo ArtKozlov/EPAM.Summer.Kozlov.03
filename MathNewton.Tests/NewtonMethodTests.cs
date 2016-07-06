@@ -11,33 +11,30 @@ namespace MathNewton.Tests
 
         [DataSource(
             "Microsoft.VisualStudio.TestTools.DataSource.XML",
-            "|DataDirectory|\\TestCases.xml",
+            "D:\\Epam\\EPAM.Summer.Kozlov.03\\MathNewton.Tests\\TestDoc.xml",
             "TestCase",
             DataAccessMethod.Sequential)]
-        [DeploymentItem("MathNewton.Tests\\TestCases.xml")]
 
         [TestMethod]
         public void SqrtTest()
         {
-            var number = Convert.ToDouble(TestContext.DataRow["number"]);
-            var power = Convert.ToInt32(TestContext.DataRow["power"]);
-            var exp = Convert.ToDouble(TestContext.DataRow["exp"]);
-            var actual = Sqrt(number,power,exp);
-            var expected = Convert.ToDouble(TestContext.DataRow["ExpectedResult"]);
+            double number = Convert.ToDouble(TestContext.DataRow["number"]);
+            int power = Convert.ToInt32(TestContext.DataRow["power"]);
+            double exp = Convert.ToDouble(TestContext.DataRow["exp"]);
+            int actual = Convert.ToInt32(Sqrt(number,power,exp));
+            int expected = Convert.ToInt32(TestContext.DataRow["ExpectedResult"]);
 
             Assert.AreEqual(expected, actual);
         }
 
          [TestMethod]
-         public void SqrtExeptionTest()
+         [ExpectedException(typeof(Exception))]
+        public void SqrtExeptionTest()
          {
              var number = Convert.ToDouble(TestContext.DataRow["number"]);
              var power = Convert.ToInt32(TestContext.DataRow["power"]);
              var exp = Convert.ToDouble(TestContext.DataRow["exp"]);
-             var actual = Convert.ToString(NewtonMethod.Sqrt(number, power, exp));
-             var expected = Convert.ToString(TestContext.DataRow["ExpectedResult"]);
-
-             Assert.AreEqual(expected, actual);
+             Sqrt(number, power, exp);
          }
          
     }

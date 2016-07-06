@@ -8,7 +8,7 @@ namespace MathNewton.NUnitTests
     {
         [TestCase(16,2,0.01)]
         [TestCase(16, 2, 0.000000001)]
-        [TestCase(16, 0, 0.01, Result = 1)]
+        [TestCase(16, 0, 0.01)]
         [TestCase(16, 3, 0.01)]
         public double SqrtTest(double number, int power, double e)
         {

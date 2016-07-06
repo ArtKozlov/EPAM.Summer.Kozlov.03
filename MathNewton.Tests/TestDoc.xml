@@ -1,5 +1,4 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?> 
-<TestCases>
   <TestCase>
     <number>16</number>
     <power>2</power>
@@ -24,4 +23,3 @@
         <exp>1</exp>
     <ExpectedResult>System.Exception()</ExpectedResult>
   </TestCase>
-</TestCases>

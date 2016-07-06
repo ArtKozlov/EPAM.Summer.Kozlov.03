@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?> 
+  <TestCase>
+    <number>16</number>
+    <power>2</power>
+        <exp>0.01</exp>
+    <ExpectedResult>4</ExpectedResult>
+  </TestCase>
+  <TestCase>
+    <number>27</number>
+    <power>3</power>
+        <exp>1</exp>
+    <ExpectedResult>3</ExpectedResult>
+  </TestCase>  
+    <TestCase>
+    <number>16</number>
+    <power>0</power>
+        <exp>1</exp>
+    <ExpectedResult>1</ExpectedResult>
+  </TestCase>  
+    <TestCase>
+    <number>-16</number>
+    <power>3</power>
+        <exp>1</exp>
+    <ExpectedResult>System.Exception()</ExpectedResult>
+  </TestCase>
