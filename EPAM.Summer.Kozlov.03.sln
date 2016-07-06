@@ -15,6 +15,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MathNewton.NUnitTests", "Ma
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GCD.NUnitTests", "GCD.NUnitTests\GCD.NUnitTests.csproj", "{B8A8F290-3AED-44AB-AEC3-8262816030DB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Task03", "Task03\Task03.csproj", "{BF45C076-D12F-4BF0-B581-2340C325E339}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Task03.NUnitTests", "Task03.NUnitTests\Task03.NUnitTests.csproj", "{5ACF9AFE-3B35-42AD-8220-436E84CD73D6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +49,14 @@ Global
 		{B8A8F290-3AED-44AB-AEC3-8262816030DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B8A8F290-3AED-44AB-AEC3-8262816030DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B8A8F290-3AED-44AB-AEC3-8262816030DB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BF45C076-D12F-4BF0-B581-2340C325E339}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BF45C076-D12F-4BF0-B581-2340C325E339}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BF45C076-D12F-4BF0-B581-2340C325E339}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BF45C076-D12F-4BF0-B581-2340C325E339}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5ACF9AFE-3B35-42AD-8220-436E84CD73D6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5ACF9AFE-3B35-42AD-8220-436E84CD73D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5ACF9AFE-3B35-42AD-8220-436E84CD73D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5ACF9AFE-3B35-42AD-8220-436E84CD73D6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
