@@ -1,0 +1,12 @@
+D:\Epam\EPAM.Summer.Kozlov.03\GCD.Tests\bin\Debug\GCD.Tests.dll
+D:\Epam\EPAM.Summer.Kozlov.03\GCD.Tests\bin\Debug\GCD.Tests.pdb
+D:\Epam\EPAM.Summer.Kozlov.03\GCD.Tests\bin\Debug\GCD.dll
+D:\Epam\EPAM.Summer.Kozlov.03\GCD.Tests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+D:\Epam\EPAM.Summer.Kozlov.03\GCD.Tests\bin\Debug\nunit.framework.dll
+D:\Epam\EPAM.Summer.Kozlov.03\GCD.Tests\bin\Debug\GCD.pdb
+D:\Epam\EPAM.Summer.Kozlov.03\GCD.Tests\bin\Debug\nunit.framework.xml
+D:\Epam\EPAM.Summer.Kozlov.03\GCD.Tests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.xml
+D:\Epam\EPAM.Summer.Kozlov.03\GCD.Tests\bin\Debug\ru\Microsoft.VisualStudio.QualityTools.UnitTestFramework.resources.dll
+D:\Epam\EPAM.Summer.Kozlov.03\GCD.Tests\obj\Debug\GCD.Tests.csprojResolveAssemblyReference.cache
+D:\Epam\EPAM.Summer.Kozlov.03\GCD.Tests\obj\Debug\GCD.Tests.dll
+D:\Epam\EPAM.Summer.Kozlov.03\GCD.Tests\obj\Debug\GCD.Tests.pdb

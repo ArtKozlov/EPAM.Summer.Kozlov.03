@@ -1,0 +1,12 @@
+D:\Epam\EPAM.Summer.Kozlov.03\MathNewton.Tests\bin\Debug\MathNewton.Tests.dll
+D:\Epam\EPAM.Summer.Kozlov.03\MathNewton.Tests\bin\Debug\MathNewton.Tests.pdb
+D:\Epam\EPAM.Summer.Kozlov.03\MathNewton.Tests\bin\Debug\MathNewton.dll
+D:\Epam\EPAM.Summer.Kozlov.03\MathNewton.Tests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+D:\Epam\EPAM.Summer.Kozlov.03\MathNewton.Tests\bin\Debug\nunit.framework.dll
+D:\Epam\EPAM.Summer.Kozlov.03\MathNewton.Tests\bin\Debug\MathNewton.pdb
+D:\Epam\EPAM.Summer.Kozlov.03\MathNewton.Tests\bin\Debug\nunit.framework.xml
+D:\Epam\EPAM.Summer.Kozlov.03\MathNewton.Tests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.xml
+D:\Epam\EPAM.Summer.Kozlov.03\MathNewton.Tests\bin\Debug\ru\Microsoft.VisualStudio.QualityTools.UnitTestFramework.resources.dll
+D:\Epam\EPAM.Summer.Kozlov.03\MathNewton.Tests\obj\Debug\MathNewton.Tests.csprojResolveAssemblyReference.cache
+D:\Epam\EPAM.Summer.Kozlov.03\MathNewton.Tests\obj\Debug\MathNewton.Tests.dll
+D:\Epam\EPAM.Summer.Kozlov.03\MathNewton.Tests\obj\Debug\MathNewton.Tests.pdb
