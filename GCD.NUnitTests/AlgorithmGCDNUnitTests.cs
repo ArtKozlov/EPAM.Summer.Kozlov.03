@@ -14,9 +14,9 @@ namespace GCD.NUnitTests
         public int GCDTest(int firstNumber, int secondNumber, int thirdNumber, int forthNumber)
         {
             long time;
-            GetGCD(CalculateGCD, out time, firstNumber, secondNumber);
-            GetGCD(CalculateGCD, out time, firstNumber, secondNumber, thirdNumber);
-            return GetGCD(CalculateGCD, out time, firstNumber, secondNumber, thirdNumber, forthNumber);
+            GetGCD(out time, firstNumber, secondNumber);
+            GetGCD(out time, firstNumber, secondNumber, thirdNumber);
+            return GetGCD(out time, firstNumber, secondNumber, thirdNumber, forthNumber);
         }
 
 
@@ -27,9 +27,9 @@ namespace GCD.NUnitTests
         public int SteinGCDTest(int firstNumber, int secondNumber, int thirdNumber, int forthNumber)
         {
             long time;
-            GetGCD(CalculateSteinGCD, out time, firstNumber, secondNumber);
-            GetGCD(CalculateSteinGCD, out time, firstNumber, secondNumber, thirdNumber);
-            return GetGCD(CalculateSteinGCD, out time, firstNumber, secondNumber, thirdNumber, forthNumber);
+            GetSteinGCD(out time, firstNumber, secondNumber);
+            GetSteinGCD(out time, firstNumber, secondNumber, thirdNumber);
+            return GetGCD(out time, firstNumber, secondNumber, thirdNumber, forthNumber);
         }
     }
 }

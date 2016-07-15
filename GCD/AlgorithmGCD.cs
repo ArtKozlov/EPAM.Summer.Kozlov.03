@@ -5,45 +5,8 @@ namespace GCD
 {
     public static class AlgorithmGCD
     {
-        public delegate int Calculator(int lhs, int rhs);
-        /// <summary>
-        /// This method is the GCD of two numbers and displays the run-time program.
-        /// </summary>
-        /// <param name="runTime">the run-time program.</param>
-        /// <returns>GCD of numbers./returns>
-        public static int GetGCD(Calculator GCD, out long runTime, int firstNumber, int secondNumber)
-        {
-            Stopwatch stopWatch = new Stopwatch();
-            stopWatch.Start();
-            int result = GCD(firstNumber, secondNumber);
-            stopWatch.Stop();
-            runTime = stopWatch.ElapsedTicks;
-            return result;
 
-        }
-
-        /// <summary>
-        /// This method is the GCD of three numbers and displays the run-time program.
-        /// </summary>
-        /// <param name="runTime">the run-time program.</param>
-        /// <returns>GCD of numbers./returns>
-        public static int GetGCD(Calculator GCD, out long runTime, int firstNumber, int secondNumber, int thirdNumber)
-        {
-            Stopwatch stopWatch = new Stopwatch();
-            stopWatch.Start();
-            firstNumber = GCD(firstNumber, secondNumber);
-            int result = GCD(firstNumber, thirdNumber);
-            stopWatch.Stop();
-            runTime = stopWatch.ElapsedTicks;
-            return result;
-        }
-
-        /// <summary>
-        /// This method is the GCD of numbers and displays the run-time program.
-        /// </summary>
-        /// <param name="runTime">the run-time program.</param>
-        /// <returns>GCD of numbers./returns>
-        public static int GetGCD(Calculator GCD, out long runTime, params int[] arrayOfNumbers)
+        private static int DelegateMethod(Func<int, int, int> GCD, out long runTime, params int[] arrayOfNumbers)
         {
             Stopwatch stopWatch = new Stopwatch();
             stopWatch.Start();
@@ -57,13 +20,57 @@ namespace GCD
             return result;
         }
         /// <summary>
+        /// This method is the GCD of two numbers and displays the run-time program.
+        /// </summary>
+        /// <param name="runTime">the run-time program.</param>
+        /// <returns>GCD of numbers.</returns>
+        public static int GetGCD(out long runTime, int firstNumber, int secondNumber) 
+            => DelegateMethod(CalculateGCD, out runTime,firstNumber, secondNumber);
+
+        /// <summary>
+        /// This method is the GCD of three numbers and displays the run-time program.
+        /// </summary>
+        /// <param name="runTime">the run-time program.</param>
+        /// <returns>GCD of numbers.</returns>
+        public static int GetGCD(out long runTime, int firstNumber, int secondNumber, int thirdNumber) 
+            => DelegateMethod(CalculateGCD, out runTime, firstNumber, secondNumber, thirdNumber);
+
+        /// <summary>
+        /// This method is the GCD of numbers and displays the run-time program.
+        /// </summary>
+        /// <param name="runTime">the run-time program.</param>
+        /// <returns>GCD of numbers.</returns>
+        public static int GetGCD(out long runTime, params int[] arrayOfNumbers)
+            => DelegateMethod(CalculateGCD, out runTime, arrayOfNumbers);
+
+
+        #region Get Stein GCD
+
+        /// <summary>
+        /// This method is the GCD of two numbers binary and displays the run-time program.
+        /// </summary>
+        /// <param name="runTime">the run-time program.</param>
+        /// <returns>GCD of numbers.</returns>
+        public static int GetSteinGCD(out long runTime, int firstNumber, int secondNumber)
+            => DelegateMethod(CalculateSteinGCD, out runTime, firstNumber, secondNumber);
+        /// <summary>
+        /// This method is the GCD of three numbers binary and displays the run-time program.
+        /// </summary>
+        /// <param name="runTime">the run-time program.</param>
+        /// <returns>GCD of numbers.</returns>
+        public static int GetSteinGCD(out long runTime, int firstNumber, int secondNumber, int thirdNumber)
+            => DelegateMethod(CalculateSteinGCD, out runTime, firstNumber, secondNumber, thirdNumber);
+        /// <summary>
         /// This method is the GCD of numbers binary and displays the run-time program.
         /// </summary>
         /// <param name="runTime">the run-time program.</param>
-        /// <returns>GCD of numbers./returns>
+        /// <returns>GCD of numbers.</returns>
+        public static int GetSteinGCD(out long runTime, params int[] arrayOfNumbers)
+            => DelegateMethod(CalculateSteinGCD, out runTime, arrayOfNumbers);
 
+        #endregion
 
-        public static int CalculateGCD(int firstNumber, int secondNumber)
+        private static int CalculateGCD(int firstNumber, int secondNumber)
         {
 
             if (firstNumber == secondNumber)
@@ -95,57 +102,11 @@ namespace GCD
             {
                 return CalculateGCD(secondNumber, firstNumber % secondNumber);
             }
-            
+
             return Math.Abs(secondNumber);
         }
-#region Get Stein GCD
-        /*
-        /// <summary>
-        /// This method is the GCD of two numbers binary and displays the run-time program.
-        /// </summary>
-        /// <param name="runTime">the run-time program.</param>
-        /// <returns>GCD of numbers./returns>
-        public static int GetSteinGCD(out long runTime, int firstNumber, int secondNumber)
-        {
-            Stopwatch stopWatch = new Stopwatch();
-            stopWatch.Start();
-            int result = CalculateSteinGCD(firstNumber, secondNumber);
-            stopWatch.Stop();
-            runTime = stopWatch.ElapsedTicks;
-            return result;
 
-        }
-        /// <summary>
-        /// This method is the GCD of three numbers binary and displays the run-time program.
-        /// </summary>
-        /// <param name="runTime">the run-time program.</param>
-        /// <returns>GCD of numbers./returns>
-        public static int GetSteinGCD(out long runTime, int firstNumber, int secondNumber, int thirdNumber)
-        {
-            Stopwatch stopWatch = new Stopwatch();
-            stopWatch.Start();
-            firstNumber = CalculateSteinGCD(firstNumber, secondNumber);
-            int result = CalculateSteinGCD(firstNumber, thirdNumber);
-            stopWatch.Stop();
-            runTime = stopWatch.ElapsedTicks;
-            return result;
-        }
-        public static int GetSteinGCD(out long runTime, params int[] arrayOfNumbers)
-        {
-            Stopwatch stopWatch = new Stopwatch();
-            stopWatch.Start();
-            int result = arrayOfNumbers[0];
-            for (int i = 0; i < arrayOfNumbers.Length - 1; i++)
-            {
-                result = CalculateSteinGCD(result, arrayOfNumbers[i++]);
-            }
-            stopWatch.Stop();
-            runTime = stopWatch.ElapsedTicks;
-            return result;
-        }
-        */
-#endregion
-        public static int CalculateSteinGCD(int firstNumber, int secondNumber)
+        private static int CalculateSteinGCD(int firstNumber, int secondNumber)
         {
             
             if (firstNumber == secondNumber)
