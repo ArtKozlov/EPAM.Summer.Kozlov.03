@@ -2,6 +2,7 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using GCD;
 
+// После рефакторинга и добавления делегатов, тесты ниже не менял. Они в нерабочем состоянии. Смотреть NUnit тесты.
 namespace GCD.Tests
 {
     [TestClass]

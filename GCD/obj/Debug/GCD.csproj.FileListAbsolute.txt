@@ -4,3 +4,4 @@ D:\Epam\EPAM.Summer.Kozlov.03\GCD\bin\Debug\nunit.framework.dll
 D:\Epam\EPAM.Summer.Kozlov.03\GCD\bin\Debug\nunit.framework.xml
 D:\Epam\EPAM.Summer.Kozlov.03\GCD\obj\Debug\GCD.dll
 D:\Epam\EPAM.Summer.Kozlov.03\GCD\obj\Debug\GCD.pdb
+D:\Epam\EPAM.Summer.Kozlov.03\GCD\obj\Debug\GCD.csprojResolveAssemblyReference.cache
